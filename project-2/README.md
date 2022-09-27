@@ -8,9 +8,6 @@ Find below images showing results of execution of LEMP Stack installation steps
 ## Webpage Showing DNS and IP
 ![](./webpage-showing-ip.png)
 
-## Mysql Installation and Successful Login
-![](../project-1/mysql_installation.png)
-
 ## Nano editor showing Nginx config
 ![](./nano-editor-showing-config.png)
 
@@ -27,4 +24,4 @@ Find below images showing results of execution of LEMP Stack installation steps
 ![](./todolist.png)
 
 ### Note for Review
-_I used the same ec2 instance for the LAMP stack setup to setup LEMP stack. I only stopped it, hence my mysql installation was still intact when I restarted it. Hence avoiding re-installation._
+_I used the same ec2 instance for the LAMP stack setup to setup LEMP stack. I only stopped it, hence my mysql installation was still intact when I restarted it. Thus avoiding re-installation._
