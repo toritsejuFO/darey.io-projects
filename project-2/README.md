@@ -24,4 +24,4 @@ Find below images showing results of execution of LEMP Stack installation steps
 ![](./todolist.png)
 
 ### Note for Review
-_I used the same ec2 instance for the LAMP stack setup to setup LEMP stack. I only stopped it, hence my mysql installation was still intact when I restarted it. Thus avoiding re-installation._
+_I used the same ec2 instance for the LAMP stack setup to setup LEMP stack. I only stopped it, hence my mysql and php installations were still intact when I restarted it. Thus avoiding re-installation._
