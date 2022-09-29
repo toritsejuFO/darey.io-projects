@@ -14,5 +14,8 @@ Find below images showing results of execution of MERN Stack implementation step
 ## Postman DELETE Todo
 ![](./postman-delete-todo.png)
 
+## Ubuntu Server showing Server and Client running concurrently
+![](./server-client-running.png)
+
 ## Todo Frontend Client
 ![](./todo-frontend.png)
