@@ -13,38 +13,46 @@ Install WordPress and connect it to a remote MySQL database server. This part of
 
 
 ### Web Server Instance on AWS
-Image showing public and private IP of the web server instance on AWS <br/>
+Image showing public and private IP of the web server instance on AWS
+
 ![](./server-aws.png)
 
 
 ### DB Server Instance on AWS
-Image showing public and private IP of the DB (mysql) server instance on AWS <br/>
+Image showing public and private IP of the DB (mysql) server instance on AWS
 ![](./db-instance.png)
 
 
+
 ### Web Server Partition
-Display of Web Server instance disk file system showing successful parition logical partition <br/>
+Display of Web Server instance disk file system showing successful logical partition
 
 Showing logical partition;
 `/dev/webdata--vg-apps--lv` logical volume
-`/dev/webdata--vg-logs--lv` logical volume <br/>
+`/dev/webdata--vg-logs--lv` logical volume  
+
 ![](./server-partition.png)
 
 
+
 ### DB Server Instance on AWS
-Display of Web Server instance disk file system showing successful parition logical partition <br/>
+Display of Web Server instance disk file system showing successful parition logical partition
 
 Showing logical partition;
-`/dev/webdata--vg-db--lv` logical volume
-`/dev/webdata--vg-logs--lv` logical volume <br/>
+`/dev/webdata--vg-db--lv` logical volume  
+`/dev/webdata--vg-logs--lv` logical volume  
+
 ![](./db-partition.png)
 
 
+
 ### Mysql remote connection
-Result of successful database remote connection between Web Server instance and DB server instance using local IP <br/>
+Result of successful database remote connection between Web Server instance and DB server instance using local IP
+
 ![](./db-remote-connection.png)
 
 
 ### Mysql Client Instance on AWS
-Successful wordpress installation page via Web Server instance public IP <br/>
+Successful wordpress installation page via Web Server instance public IP
+
 ![](./wordpress-install-page.png)
