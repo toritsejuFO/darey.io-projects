@@ -14,7 +14,7 @@ Install WordPress and connect it to a remote MySQL database server. This part of
 
 ### Web Server Instance on AWS
 Image showing public and private IP of the web server instance on AWS <br/>
-![](./server-instance.png)
+![](./server-aws.png)
 
 
 ### DB Server Instance on AWS
