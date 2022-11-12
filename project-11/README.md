@@ -55,7 +55,7 @@ To tun the ansible test, we go into the directory where Jenkins stored the artif
 ```bash
 cd /var/lib/jenkins/jobs/ansible-config-mgt/builds/20/archive
 
-ansible-playbook -i inventory/dev.yml playbooks/common.yml
+ansible-playbook -i inventory/dev.txt playbooks/common.yml
 ```
 
 Below we see the ansible tasks run successful on the target hosts  
