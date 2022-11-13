@@ -68,3 +68,6 @@ Below is an image of the successful ansible playbook task ran on uat servers
 Below is a sample of one of the uat servers displaying running tooling website  
 
 ![](./sample_uat_server.png)
+
+### Complete Project 12 architecture
+![](./project12_architecture.png)
