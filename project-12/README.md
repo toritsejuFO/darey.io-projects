@@ -4,6 +4,8 @@
 
 The goal of the project is to improve the work done in [project 11](https://github.com/toritsejuFO/darey.io-projects/tree/main/project-11) through refactoring to become more efficient with ansible configuration.
 
+This project makes use of, or rather builds on the same [ansible-config-mgt](https://github.com/toritsejuFO/ansible-config-mgt) repo used in project 11.
+
 ### Step 1 - Jenkins Job Enhancement
 
 - Created directory to store latest successful build from **ansible-config-mgt** job `sudo mkdir /home/ubuntu/ansible-config-artifact`
@@ -47,7 +49,7 @@ Below shows that wireshark is uninstalled from a couple of samples of our target
 
 ### Step 3 - Configure UAT Webservers with a role ‘Webserver’
 
-Created webserver role tasks [here](https://github.com/toritsejuFO/ansible-config-mgt/blob/main/roles/tasks/main.yml), which performs the below instructions when run
+Created webserver role tasks [here](https://github.com/toritsejuFO/ansible-config-mgt/blob/main/roles/webserver/tasks/main.yml), which performs the below instructions when run
 
 - Install and configure Apache (httpd service)
 - Clone Tooling website from [GitHub repo](https://github.com/toritsejuFO/tooling.git)
