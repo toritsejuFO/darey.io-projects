@@ -2,7 +2,7 @@
 
 ## Task
 
-The goal of the project is to improve the work done in project 11 through refactoring to become more efficient with ansible configuration.
+The goal of the project is to improve the work done in [project 11](https://github.com/toritsejuFO/darey.io-projects/tree/main/project-11) through refactoring to become more efficient with ansible configuration.
 
 ### Step 1 - Jenkins Job Enhancement
 
