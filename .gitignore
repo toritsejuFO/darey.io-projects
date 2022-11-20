@@ -1,3 +1,5 @@
 .vscode
 *.cer
 .DS_Store
+
+test-*
