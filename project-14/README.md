@@ -5,11 +5,13 @@ Simulating a typical CI/CD pipeline for a PHP based application
 
 As part of the ongoing infrastructure development with Ansible started from [project 11](https://github.com/toritsejuFO/darey.io-projects/tree/main/project-11), you will be tasked to create a pipeline that simulates continuous integration and delivery. Target end to end CI/CD pipeline is represented by the diagram below. It is important to know that both Tooling and TODO Web Applications are based on an interpreted (scripting) language (PHP). It means, it can be deployed directly onto a server and will work without compiling the code to a machine language.
 
-The problem with that approach is, it would be difficult to package and version the software for different releases. And so, in this project, we will be using a different approach for releases, rather than downloading directly from git, we will be using Ansible uri module.<br>
+The problem with that approach is, it would be difficult to package and version the software for different releases. And so, in this project, we will be using a different approach for releases, rather than downloading directly from git, we will be using Ansible uri module.  
+
 ![](./CI_CD-Pipeline-For-PHP-ToDo-Application.png)
 
 #### Setup
-The final setup to be simulated. <br>
+The final setup to be simulated.  
+
 ![](./Environment-setup.png)
 
 
@@ -20,7 +22,8 @@ Reconfigured existing Jenkins server from [project 13](https://github.com/torits
 - Created new pipeline to work existing repository
 - Added and updated `Jenkinsfile` to contain simple stages
 - Committed and pushed
-- Triggered build on Jenkins <br>
+- Triggered build on Jenkins  
+
 ![](./simple-jenkinsfile-main.png)
 
 
@@ -34,13 +37,18 @@ Reconfigured existing Jenkins server from [project 13](https://github.com/torits
 
 See images below:
 
-**2a. Parameterized build**  <br>
+**2a. Parameterized build**  
+
 ![](./deploy-env-parameter.png)
 
-**2b. Dynamic Multibranch build for `dev` and `main` without modifying Jenkinsfile** <br>
-![](./dev-pipeline-ansible.png) <br>
+**2b. Dynamic Multibranch build for `dev` and `main` without modifying Jenkinsfile**  
+
+![](./dev-pipeline-ansible.png)  
+
 ![](./main-pipeline-ansible.png)
 
-**2c. Successful Installations for `nginx` and `mysql` servers** <br>
-![](./nginx-installed.png) <br>
+**2c. Successful Installations for `nginx` and `mysql` servers**  
+
+![](./nginx-installed.png)  
+
 ![](./mysql-installed.png)
