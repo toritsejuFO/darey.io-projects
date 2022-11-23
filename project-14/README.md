@@ -16,11 +16,11 @@ The final setup to be simulated.
 
 
 #### 1. Configuring Ansible For Jenkins Deployment
-Reconfigured existing Jenkins server from [project 13](https://github.com/toritsejuFO/darey.io-projects/tree/main/project-11)
+- Created new Jenkins-Ansible server
 - Installed "Blue Ocean" plugin
 - Connected Jenkins to github using generated access token
-- Created new pipeline to work existing repository
-- Added and updated `Jenkinsfile` to contain simple stages
+- Created new pipeline to existing [ansible-config-mgt](https://github.com/toritsejuFO/ansible-config-mgt) repo used in [project 13](https://github.com/toritsejuFO/darey.io-projects/tree/main/project-13)
+- Added and updated `Jenkinsfile` to contain simple stages with echo commands
 - Committed and pushed
 - Triggered build on Jenkins  
 
@@ -28,7 +28,7 @@ Reconfigured existing Jenkins server from [project 13](https://github.com/torits
 
 
 #### 2. Run Ansible Playbook from jenkins
-* Installed the ansible plugin on jenkins
+* Installed the "Ansible" plugin on jenkins
 * Added private ssh key to global credentials on jenkins
 * Configured jenkins to run ansible playbook through implementation of stages/steps in `Jenkinsfile`
   - Used the jenkins default `BRANCH_NAME` environment variable in the `checkout SCM` stage to ensure true and dynamic multibranch build based on push. 
