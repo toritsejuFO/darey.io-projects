@@ -15,7 +15,7 @@ The final setup to be simulated.
 ![](./Environment-setup.png)
 
 
-#### 1. Configuring Ansible For Jenkins Deployment
+### 1. Configuring Ansible For Jenkins Deployment
 - Created new Jenkins-Ansible server
 - Installed "Blue Ocean" plugin
 - Connected Jenkins to github using generated access token
@@ -27,7 +27,7 @@ The final setup to be simulated.
 ![](./simple-jenkinsfile-main.png)
 
 
-#### 2. Run Ansible Playbook from jenkins
+### 2. Run Ansible Playbook from jenkins
 * Installed the "Ansible" plugin on jenkins
 * Added private ssh key to global credentials on jenkins
 * Configured jenkins to run ansible playbook through implementation of stages/steps in `Jenkinsfile`
@@ -52,3 +52,38 @@ See images below:
 ![](./nginx-installed.png)  
 
 ![](./mysql-installed.png)
+
+
+### 3. CI/CD pipeline for Todo application
+
+#### 3.1 Installed artifactory using ansible on artifactory server
+- Created artifactory server
+- installed artifactory plugin on jenkins server
+- Implemented ansible artifactory role  
+
+![](./artifactory-installed.png)
+
+#### 3.2 Integrate Artifactory repository with Jenkins
+- Implemented update via ansible to create homestead db and user on db server
+- confirmed db and user is created  
+
+![](./homestead-db-created.png)
+![](./homestead-confirm.png)
+
+#### 3.3 Code Quality Analysis
+- Implemented php todo app jenkins pipeline
+- installed plot plugin on jenkins  
+
+![](./php-todo-first-pipeline.png)
+![](./plot-jenkins.png)
+
+#### 3.4 Bundle, Publish and Deploy php todo app
+- Implemented stage to trigger ansible-config-mgt job after successfully running php-todo job
+- Launched todo webserver instance on AWS
+- Update ansible-config-mgt job to deploy php-todo application from artifactory to todo-webserver  
+
+![](./todo-delpoyment-ansbile.png)
+![](./todo-deployment-artifactory.png)
+
+### 4. Sonarqube Installation
+
