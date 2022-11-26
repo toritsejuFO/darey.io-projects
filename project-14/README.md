@@ -86,4 +86,31 @@ See images below:
 ![](./todo-deployment-artifactory.png)
 
 ### 4. Sonarqube Installation
+- Implemented sonarqube role on ansible and ran via jenkins server  
 
+![](./sonarqube-ansible-setup.png)
+
+- Sonarqube installed and running successfully  
+
+![](./sonarqube-installed.png)
+
+### 5. Configure Sonarqube and Jenkins for Quality Gate
+- Added quality gate check to jenkins pipeline  
+
+#### 5.1 Update Jenkins Pipeline to include SonarQube scanning and Quality Gate
+- Successful quality at first run  
+
+![](./quality-gate-first-run.png)
+
+- Failed quality gate check after scanner setup  
+
+![](./failed-quality-gate.png)
+
+- Display tech debt on sonarqube  
+
+![](./php-todo-tech-debt.png)
+
+- Setup Quality Gate to deny deployment when code quality check fails  
+![](./no-deploy.png)
+
+Link to video showcasing jenkins pipeline and sonarqube (on youtube)[https://www.youtube.com/watch?v=4t9CiBStBqY]
