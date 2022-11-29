@@ -49,3 +49,76 @@ Cost, Security, and Scalability are the major requirements for this project. Hen
     - **Data Layer**: Access to the Data layer, which is comprised of Amazon Relational Database Service (RDS) and Amazon Elastic File System (EFS) must be carefully desinged – only webservers should be able to connect to RDS, while Nginx and Webservers will have access to EFS Mountpoint.
 
 ![](./sg.png)
+
+
+### B. Setup EFS
+
+In this project, we will utulize EFS service and mount filesystems on both Nginx and Webservers to store data.
+
+1. Created an EFS filesystem
+2. Created an EFS mount target per AZ in the VPC, associate it with both subnets dedicated for data layer
+3. Associated the Security groups created earlier for data layer.
+4. Created an EFS access point
+
+![](./efs.png)
+
+
+### C. Setup RDS
+
+Pre-requisite: Created a KMS key from Key Management Service (KMS) to be used to encrypt the database instance.
+
+![](./rds-kms.png)
+
+1. Created a subnet group and add 2 private subnets (data Layer)
+2. Created an RDS Instance for mysql 8.*.* in the Free tier which allows KMS encryption as of today
+3. Configured other settings accordingly
+
+![](./rds.png)
+
+
+### D. Set Up Compute Resources for Nginx, Bastion Host and Webserver
+
+- EC2 Instances (AMI from EC2)
+- Launch Templates
+- Target Groups
+- Autoscaling Groups
+- TLS Certificates
+- Application Load Balancers (ALB)
+
+Created instances in publis subnet, and made the necessary software installations on them.
+
+![](./ec2.png)
+
+Created AMI from each of the EC2 instances
+
+![](./ami.png)
+
+Created Configured Target Groups
+
+![](./tg.png)
+
+Created External (Internet facing) and Internal Application Load Balancer towards
+
+![](./alb.png)
+
+![](./alb-rules.png)
+
+Created Launch templates for Nginx, Webservers and Bastion host
+
+![](./lt.png)
+
+Created and Autosacling Groups for Nginx, Webservers and Bastion host
+
+![](./asg.png)
+
+Route53 setup to External Load Balancer
+
+![](./r53.png)
+
+### E. Tooling and Wordpress website
+
+Secured (https) access to the tooling and wordpress site via External Load balancer using our route53 domain-DNS setup
+
+![](./tooling.png)
+
+![](./wordpress.png)
