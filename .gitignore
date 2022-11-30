@@ -3,3 +3,8 @@
 .DS_Store
 
 test-*
+
+# Terraform
+.terraform
+*.tfstate
+*.tfstate.*
