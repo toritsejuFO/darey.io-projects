@@ -88,4 +88,4 @@ Instead of havng a long list of variables in main.tf file, we can actually make 
 
 
 # Codes
-All codes can be found in the [pbl](./pbl/) folder.
+Code can be found in the [pbl-terraform tag:project16](https://github.com/toritsejuFO/pbl-terraform/tree/project16) folder.
